@@ -1,3 +1,8 @@
+url = 'https://raw.githubusercontent.com/LesMouettesSavantes/MouettesProjetTemperatures/main/Stations_id.csv'
+coord = pd.read_csv(url)
+
+coord.head()
+
 import plotly.express as px
 fig = px.scatter_mapbox(coord, 
                         lat="lat", 
