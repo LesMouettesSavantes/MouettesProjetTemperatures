@@ -3,7 +3,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # importer jeu de donnees:
-df = pd.read_csv("/home/legrand/Documents/Mouettes_Savantes/donnees/All_temperatures.csv")
+url = 'https://raw.githubusercontent.com/LesMouettesSavantes/MouettesProjetTemperatures/main/All_temperatures.csv'
+df = pd.read_csv(url)
 
 print(df.head()) # affiche les premieres lignes du tableau
 
